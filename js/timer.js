@@ -13,13 +13,11 @@ let timerTimeOut
 
 export default function Timer() {
 
-    // Funcção atualizar display
   function updateTimerDisplay(minutes, seconds) {
     minutesDisplay.textContent = String(minutes).padStart(2, "0")
     secondsDisplay.textContent = String(seconds).padStart(2, "0")
   }
 
-  // Função para aumentar  e diminuir de 5 em 5 minutos
   function setMinutes() {
     buttonIncrease.addEventListener('click', function() {     
       minutes = (minutes + 5)
@@ -46,7 +44,6 @@ export default function Timer() {
   }
   setMinutes()
 
-  // Função contar o tempo
   function countdown() {
     timerTimeOut = setTimeout(function() {
       let minutes = Number(minutesDisplay.textContent)
@@ -69,7 +66,6 @@ export default function Timer() {
     }, 1000)
   }
 
-  // Função para pausar e resetar tempo
   function resetTimer() {
     minutes = 0
     updateTimerDisplay(minutes, 0)

@@ -52,7 +52,6 @@ buttonFlorest.addEventListener('click', function() {
   sounds.setSound('./sounds/Floresta.wav')
 })
 
-// muda cor botao, e background, coloca sound
 buttonRain.addEventListener('click', function() {
   buttonRain.classList.add('selected')
   buttonFlorest.classList.remove('selected')
@@ -62,7 +61,6 @@ buttonRain.addEventListener('click', function() {
   sounds.setSound('./sounds/Chuva.wav')
 })
 
-// muda cor botao, e background, coloca sound
 buttonCoffeeShop.addEventListener('click', function() {
   buttonCoffeeShop.classList.add('selected')
   buttonRain.classList.remove('selected')
@@ -72,7 +70,6 @@ buttonCoffeeShop.addEventListener('click', function() {
   sounds.setSound('./sounds/Cafeteria.wav')
 })
 
-// muda cor botao, e background, coloca sound
 buttonFireplace.addEventListener('click', function() {
   buttonFireplace.classList.add('selected')
   buttonRain.classList.remove('selected')

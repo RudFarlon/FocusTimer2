@@ -5,7 +5,6 @@ let {
 } = Elements()
 
 export default function Sounds() {
-  // função para play e pause do sound
   function setSound(sound) {
     audio.pause()
     audio.src = sound
