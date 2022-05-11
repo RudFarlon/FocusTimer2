@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 32rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1;
+  margin: 1.7rem auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  max-width: 30rem;
+  margin: 1.7rem;
+}
+
+.container-timer {
+  max-width: 32.5rem;
+
+  color: #323238;
+}
+
+.timer {
+  font-size: clamp(6rem, 6rem + 12vw, 10rem);
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sound {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.sound svg:hover path {
+  fill: #02799D;
+  transition: 900ms;
+}
+
+.sound svg:hover path:last-child {
+  fill: white;
+}
+
+.sound button { 
+  max-width: 13.8rem;
+  max-height: 15.2rem;
+}
+
+.selected svg path {
+  fill: #02799D;
+}
+.selected svg path:last-child {
+  fill: white;
+}
+
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    margin: auto;
+    height: 90vh;
+  }
+  .sound {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    margin: auto;
+    height: 90vh;
+  }
+  .timer {
+    font-size: clamp(8rem, 8rem + 15vw, 12rem);
+  }
+  .controls svg {
+    width: 7rem;
+    height: 8rem;
+    margin: 0.7rem;
+  }
+}
