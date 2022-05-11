@@ -42,7 +42,7 @@ buttonStop.addEventListener('click', function() {
   timer.updateTimerDisplay(minutes, 0)
 })
 
-// muda cor botao, e background, coloca sound
+
 buttonFlorest.addEventListener('click', function() {
   buttonFlorest.classList.add('selected')
   buttonRain.classList.remove('selected')
