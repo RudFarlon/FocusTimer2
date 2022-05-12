@@ -10,8 +10,14 @@ export default function Sounds() {
     audio.src = sound
     audio.play()
 
+    
+  }
+  function pauseSound() {
+    audio.pause()
   }
   return {
     setSound,
+    pauseSound
   }
+  
 }

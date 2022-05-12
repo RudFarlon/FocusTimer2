@@ -15,7 +15,6 @@ let {
   buttonFireplace,
 } = Elements()
 
-let minutes = timer.getMinutes()
 
 buttonPlay.addEventListener('click', function() {
   buttonPause.classList.remove('hide')
@@ -39,7 +38,8 @@ buttonStop.addEventListener('click', function() {
   buttonPause.classList.add('hide')
   buttonPlay.classList.remove('hide')
   timer.resetTimer()
-  timer.updateTimerDisplay(minutes, 0)
+  timer.updateTimerDisplay(timer.getMinutes(), 0)
+  sounds.pauseSound()
 })
 
 
